@@ -3,7 +3,7 @@
 //block for loading images
 
 var loader = document.querySelectorAll(".loadImg");
-var divThumb = document.getElementsByClassName('.divThumb');
+var divThumb = document.getElementsByClassName('divThumb');
 
 window.addEventListener("load", showImg);
 
