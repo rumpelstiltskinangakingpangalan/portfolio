@@ -7,6 +7,7 @@ var divThumber = document.querySelectorAll(".divThumb");
 var divThumberHori = document.querySelectorAll(".divThumbHori");
 var divThumberVerti = document.querySelectorAll(".divThumbVerti");
 var divThumberRect = document.querySelectorAll(".divThumbRect");
+var divThumberSquare = document.querySelectorAll(".divThumbSquare")
 
 window.addEventListener("load", showImg);
 
@@ -33,6 +34,11 @@ function showImg() {
 
 	divThumberRect.forEach(divThumbRect => {
 		divThumbRect.style.animationDuration = "0s";
+
+	})
+
+	divThumberSquare.forEach(divThumbSquare => {
+		divThumbSquare.style.animationDuration = "0s";
 
 	})
 
