@@ -10,11 +10,6 @@ html#browserScroll {
 	overflow: hidden;
 }
 
-#tblGrid td{
-	
-	/* border: solid .1px white; */ 
-}
-
 #header {
 	height: 90px;
 	width: 95vw;
@@ -509,13 +504,8 @@ html#browserScroll {
 	margin-right: auto;
 	
 	margin-bottom: 20px;
-	
-	/* border: solid .1px white; */
 }
 
-#tblCategory01 td {
-	/* border: solid .1px white; */
-}
 
 #titleCategory01 {
 	height: 22px;	
@@ -570,13 +560,27 @@ html#browserScroll {
 	height: 320px;
 	width: 320px;
 	border-radius: 10px;
-	background-color: #393939;
+	background-color: white;
 	
 	transform: scale(1);
 	transition-duration: 0.2s;
 	overflow: hidden;
 	object-fit: scale-down;
 	
+    animation-name: loading;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes loading {
+    from {
+        opacity: .05;
+    }
+    to {
+        opacity: .1;
+    }
 }
 
 .divThumb img {

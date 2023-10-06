@@ -14,11 +14,6 @@ html#browserScroll {
 	overflow: hidden;
 }
 
-#tblGrid td{
-	
-	/* border: solid .1px white; */
-	
-}
 
 #tblGrid {
 	
@@ -461,7 +456,6 @@ html#browserScroll {
 	height: 30px;
 	background-color: #212121;
 	margin-top: 4em;
-	
 }
 
 #tdAlbum {
@@ -482,6 +476,11 @@ html#browserScroll {
 	background-color: #212121;
 	border-radius: 12px;
 	overflow: hidden;
+    animation-name: loading;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 .divThumbVerti {
@@ -491,9 +490,19 @@ html#browserScroll {
 	grid-row: span 3;
 	grid-column: span 2;
 	border-radius: 10px;
-	background-color: #1e1e1e;
+	background-color: white;
 	overflow: hidden;
 	object-fit: fill;
+    animation-name: loading;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: loading;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 .divThumbHori {
@@ -503,9 +512,23 @@ html#browserScroll {
 	grid-row: span 2;
 	grid-column: span 3;
 	border-radius: 10px;
-	background-color: #1e1e1e;
+	background-color: white;
 	overflow: hidden;
 	object-fit: fill;
+    animation-name: loading;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes loading {
+    from {
+        opacity: .05;
+    }
+    to {
+        opacity: .1;
+    }
 }
 
 .loadImg {
