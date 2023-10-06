@@ -498,11 +498,20 @@ html#browserScroll {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation-name: loading;
+    animation-name: loadingVerti;
     animation-duration: 1s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+
+@keyframes loadingVerti {
+    from {
+        opacity: .05;
+    }
+    to {
+        opacity: .1;
+    }
 }
 
 .divThumbHori {
@@ -515,14 +524,14 @@ html#browserScroll {
 	background-color: white;
 	overflow: hidden;
 	object-fit: fill;
-    animation-name: loading;
+    animation-name: loadingHori;
     animation-duration: 1s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
-@keyframes loading {
+@keyframes loadingHori {
     from {
         opacity: .05;
     }
