@@ -14,8 +14,8 @@ function showImg() {
 	});
 
 	divThumb.forEach(divThumb => {
-		divThumb.style.animationDuration = "0";
-		
+		divThumb.style.animationDuration = "0s";
+
 	})
 
 }
