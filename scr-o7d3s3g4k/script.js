@@ -139,4 +139,14 @@ function submitForm() {
 	
 }
 
+function copyright() {
+	const d = new Date();
+	var year = d.getFullYear();
+
+	document.getElementById("footer").innerHTML = 
+	`<center><p>&#169; Copyright ${year}. All Rights Reserved.</p></center>`;
+}
+
+copyright();
+
 //--------------------------------------------------------------------------------------
