@@ -3,6 +3,7 @@
 //block for loading images
 
 var loader = document.querySelectorAll(".loadImg");
+var divThumb = document.getElementsByClassName('.divThumb');
 
 window.addEventListener("load", showImg);
 
@@ -11,6 +12,11 @@ function showImg() {
 	loader.forEach(loadImg => {
 		loadImg.style.opacity = 1;		
 	});
+
+	divThumb.forEach(divThumb => {
+		divThumb.style.animationDuration = "0";
+		
+	})
 
 }
 
