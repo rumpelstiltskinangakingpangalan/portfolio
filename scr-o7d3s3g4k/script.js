@@ -4,6 +4,9 @@
 
 var loader = document.querySelectorAll(".loadImg");
 var divThumber = document.querySelectorAll(".divThumb");
+var divThumberHori = document.querySelectorAll(".divThumbHori");
+var divThumberVerti = document.querySelectorAll(".divThumbVerti");
+var divThumberRect = document.querySelectorAll(".divThumbRect");
 
 window.addEventListener("load", showImg);
 
@@ -15,6 +18,21 @@ function showImg() {
 
 	divThumber.forEach(divThumb => {
 		divThumb.style.animationDuration = "0s";
+
+	})
+
+	divThumberHori.forEach(divThumbHori => {
+		divThumbHori.style.animationDuration = "0s";
+
+	})
+
+	divThumberVerti.forEach(divThumbVerti => {
+		divThumbVerti.style.animationDuration = "0s";
+
+	})
+
+	divThumberRect.forEach(divThumbRect => {
+		divThumbRect.style.animationDuration = "0s";
 
 	})
 
