@@ -14,11 +14,6 @@ html#browserScroll {
 	overflow: hidden;
 }
 
-#tblGrid td{
-	
-	/* border: solid .1px white; */
-	
-}
 
 #tblGrid {
 	
@@ -260,36 +255,6 @@ html#browserScroll {
     opacity: 1;
 }
 
-#divGame {
-    border-radius: 10px;
-    border: solid 2px rgba(255,255,255,0);
-    width: 50px;
-    height: 50px;
-    background-color: #1E1E1E;
-    transition: 0.5s;
-}
-
-.imgGame {
-    display: block;
-    opacity: .25;
-    margin: auto;
-    filter: grayscale(1);
-    transform: translateY(96%);
-    transition: 0.5s;
-}
-
-#divGame:hover {
-    border: solid 2px rgba(65,187,255,1);
-    filter: grayscale(0);
-    opacity: 1;
-    background-color: #1E1E1E;
-}
-
-#divGame:hover .imgGame {
-    filter: grayscale(0);
-    opacity: 1;
-}
-
 #divWeb {
     border-radius: 10px;
     border: solid 2px rgba(255,255,255,0);
@@ -320,35 +285,6 @@ html#browserScroll {
     opacity: 1;
 }
 
-#divArticle {
-    border-radius: 10px;
-    border: solid 2px rgba(255,255,255,0);
-    width: 50px;
-    height: 50px;
-    background-color: #1E1E1E;
-    transition: 0.5s;
-}
-
-.imgArticle {
-    display: block;
-    opacity: .25;
-    margin: auto;
-    filter: grayscale(1);
-    transform: translateY(32%) translateX(3%);
-    transition: 0.5s;
-}
-
-#divArticle:hover {
-    border: solid 2px rgba(65,187,255,1);
-    filter: grayscale(0);
-    opacity: 1;
-    background-color: #1E1E1E;
-}
-
-#divArticle:hover .imgArticle {
-    filter: grayscale(0);
-    opacity: 1;
-}
 
 #divCertificate {
     border-radius: 10px;
@@ -376,37 +312,6 @@ html#browserScroll {
 }
 
 #divCertificate:hover .imgCertificate {
-    filter: grayscale(0);
-    opacity: 1;
-}
-
-#divMessage {
-	
-    border-radius: 10px;
-    border: solid 2px rgba(255,255,255,0);
-    width: 50px;
-    height: 50px;
-    background-color: #1E1E1E;
-    transition: 0.5s;
-}
-
-.imgMessage {
-    display: block;
-    opacity: .25;
-    margin-left: 8.6px;
-    filter: grayscale(1);
-    transform: translateY(60%);
-    transition: 0.5s;
-}
-
-#divMessage:hover {
-    border: solid 2px rgba(65,187,255,1);
-    filter: grayscale(0);
-    opacity: 1;
-    background-color: #1E1E1E;
-}
-
-#divMessage:hover .imgMessage {
     filter: grayscale(0);
     opacity: 1;
 }
@@ -477,19 +382,30 @@ html#browserScroll {
 	overflow: hidden;
 	background-color: #212121;
 	border-radius: 12px;
-	/*border: 2px solid white; */
 }
 
-
 .divThumb {
-	
 	height: 320px;
 	width: 320px;
 	border-radius: 10px;
-	background-color: #1e1e1e;
+	background-color: white;
 	transition-duration: 0.2s;
 	overflow: hidden;
 	object-fit: scale-down;
+    animation-name: loading;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes loading {
+    from {
+        opacity: .3;
+    }
+    to {
+        opacity: .5;
+    }
 }
 
 .loadImg {
