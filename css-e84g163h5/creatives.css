@@ -401,10 +401,10 @@ html#browserScroll {
 
 @keyframes loading {
     from {
-        opacity: .1;
+        opacity: .05;
     }
     to {
-        opacity: .3;
+        opacity: .1;
     }
 }
 
